@@ -55,5 +55,12 @@ public class NBody {
             StdDraw.pause(10);
             t += dt;
         }
+        StdOut.printf("%d\n", p.length);
+        StdOut.printf("%.2e\n", universeradius);
+        for (int i = 0; i < p.length; i++) {
+            StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
+                    p[i].xxPos, p[i].yyPos, p[i].xxVel,
+                    p[i].yyVel, p[i].mass, p[i].imgFileName);
+        }
     }
 }
